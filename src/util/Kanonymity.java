@@ -16,8 +16,8 @@ public class Kanonymity {
         line.education_num = "*";
         line.fnlwgt = "*";
 
-        if(line.occupation == "?"){
-            line.age = "*";
+        if(line.workclass == "?"){
+            line.workclass = "*";
         }
 
         return line;

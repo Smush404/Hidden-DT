@@ -28,11 +28,18 @@ public class Main{
 
         Ldiversity L = new Ldiversity();
 
-        for(int i = 0; i < db.size(); i++){
+//        for(int i = 0; i < db.size(); i++){ //Basic
+//            l = db.get(i);
+//            db.remove(i);
+//
+//            db.add(i, L.L5(l));
+//        }
+
+        for(int i = 0; i < db.size(); i++){ //recursion
             l = db.get(i);
             db.remove(i);
 
-            db.add(i, L.L5(l));
+            db.add(i, L.init_LR(l, 1)); //init the recursion
         }
 
         p.printDB();
